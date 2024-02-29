@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="inner-container flex-container">
+            <h1><a href="index.html">Jaehee</a></h1>
+            <button class="toggle-btn" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-links">
+                <svg class="ham-icon" viewBox="0 0 32 32" width="40" height="40">
+                    <title>Navigation Menu Icon</title>
+                    <path
+                        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
+                </svg>
+            </button>
+
+            <nav id="menu-links">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="inner-container">
+                <h2>I'm <span>Jaehee</span>!</h2>
+                <p>DMIT Web Design and Development Student at NAIT</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="inner-container">
+            <p>&copy;
+                <script> document.write(new Date().getFullYear()); </script> All Rights Reserved.
+            </p>
+            <p>DESIGN For educational purposes</p>
+        </div>
+    </footer>
+
+</html>

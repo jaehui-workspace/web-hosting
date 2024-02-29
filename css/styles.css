@@ -1,0 +1,171 @@
+body {
+    background-color: #2b2f58;
+    font-family: "Poppins", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+h1>a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+}
+
+.inner-container {
+    max-width: 87.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.toggle-btn svg path {
+    fill: #fff;
+    transition: fill 0.3s ease;
+}
+
+.toggle-btn:hover svg path,
+.toggle-btn:active svg path {
+    fill: #be92ff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 1rem;
+    left: -100%;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    transition: left 0.3s ease;
+}
+
+nav ul {
+    padding-top: 6rem;
+    padding-left: 0;
+    margin-top: 6rem;
+    max-height: calc(100% - 6rem);
+    overflow-y: auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #2b2f58;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 200;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #be92ff;
+    color: #fff;
+}
+
+nav ul li a:active {
+    background-color: #2b2f58;
+}
+
+/* Show menu when button is clicked */
+.show-menu {
+    left: 0;
+    box-shadow: -2px 3px 15px 0px black;
+}
+
+#about>.inner-container {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about>.inner-container h2 {
+    font-size: 4rem;
+}
+
+#about>.inner-container span {
+    color: #be92ff;
+}
+
+#about>.inner-container p {
+    font-size: 1.5rem;
+}
+
+footer {
+    border-top: 1px solid #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Desktop View */
+@media screen and (min-width: 1024px) {
+    button {
+        display: none;
+    }
+
+    nav {
+        background-color: transparent;
+        position: static;
+        width: fit-content;
+        padding: 0;
+    }
+
+    nav ul {
+        display: flex;
+        padding: 0;
+        gap: 1rem;
+        max-height: fit-content;
+        margin: 0;
+        overflow-y: hidden;
+    }
+
+    .show-menu {
+        box-shadow: none;
+    }
+
+    nav ul li a {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+        background-color: transparent;
+        color: #be92ff;
+    }
+
+    footer>.inner-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
